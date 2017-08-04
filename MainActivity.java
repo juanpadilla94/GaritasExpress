@@ -8,13 +8,19 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-// GARITAS EXPRESS - by Juan Padilla 8/2/2017
+// GARITAS EXPRESS - by Juan Padilla 8/2/2017 - Mobile Android App
+// tracks border wait times of all Canada->USA and Mexico->USA ports of entries
 // minimum API 21: Android 5.0 (Lollipop)
 public class MainActivity extends AppCompatActivity {
 
+    // group for both countries
     private RadioGroup radioCountryGroup;
+    // country button selected
     private RadioButton radioCountryButton;
+    // button that takes you to country activity based on selection
     private Button next;
+    // terms and conditions/copyright button
+    private Button disclosure;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         radioCountryGroup =(RadioGroup)findViewById(R.id.radioGroup);
         radioCountryButton =(RadioButton)findViewById(R.id.radioButton);
+        // button for next ports screen
         next =(Button)findViewById(R.id.button);
+        // disclosure
+        disclosure = (Button) findViewById(R.id.button2);
 
         // controller - user chooses option
         next.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intent);
                     }
                 }
+            }
+        });
+        // disclosure with terms of service and copyright
+        disclosure.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DisclosureActivity.class);
+                startActivity(intent);
             }
         });
     }

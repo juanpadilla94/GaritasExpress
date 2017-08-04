@@ -64,42 +64,19 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="32dp"
             android:text="Next"
-            android:layout_above="@+id/textView4"
+            android:layout_above="@+id/button2"
             android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Disclosure"
+            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="13dp"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="13dp"
-            android:gravity="center"
-            android:text="developed by juanpadilla94 in Mexicali, BC, Mexico (:"
-            android:textColor="@color/colorOrange"
-            android:textSize="6dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textView2"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="creative commons nafta logo by AlexCovarrubias is licensed under CC BY 2.5"
-            android:textColor="@color/colorOrange"
-            android:textSize="6dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/textView3"
-            android:layout_alignParentStart="true"
-            android:gravity="center"
-            android:text="border wait info based on bwt.cbp.gov times"
-            android:textColor="@color/colorOrange"
-            android:textSize="6dp" />
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 

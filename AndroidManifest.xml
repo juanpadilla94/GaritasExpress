@@ -21,7 +21,9 @@
         </activity>
         <activity android:name=".CanadaActivity" />
         <activity android:name=".MexicoActivity" />
-        <activity android:name=".PortActivity"></activity>
+        <activity android:name=".PortActivity" />
+        <activity android:name=".Disclosure" />
+        <activity android:name=".DisclosureActivity"></activity>
     </application>
 
 </manifest>

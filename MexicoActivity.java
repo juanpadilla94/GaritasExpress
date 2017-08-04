@@ -37,13 +37,31 @@ public class MexicoActivity extends AppCompatActivity {
             final String[] delayMinutes;
             // TEXT
             // yes crossing name
+            // Calexico/Brownsville Problem
             if(portList.get(i).getCrossingName().trim() != "N/A") {
-                text = portList.get(i).getPortName() + " "
-                        + "(" + portList.get(i).getCrossingName().trim() + ")";
+                if(portList.get(i).getPortName().trim().contains("Calexico") &&
+                        portList.get(i).getCrossingName().trim().contains("West")) {
+                    text = "Calexico "
+                            + "(Zona Centro)";
+                }
+                else if (portList.get(i).getPortName().trim().contains("Calexico") &&
+                        portList.get(i).getCrossingName().trim().contains("East")) {
+                    text = "Calexico "
+                            + "(Nuevo Mexicali)";
+                }
+                else if (portList.get(i).getPortName().trim().contains("Brownsville") &&
+                        portList.get(i).getCrossingName().trim().contains("B&amp;M")) {
+                    text = "Brownsville "
+                            + "(B&M)";
+                }
+                else {
+                    text = portList.get(i).getPortName().trim() + " "
+                            + "(" + portList.get(i).getCrossingName().trim() + ")";
+                }
             }
             // no crossing name
             else {
-                text = portList.get(i).getPortName();
+                text = portList.get(i).getPortName().trim();
             }
             // hours
             hours = portList.get(i).getHours();

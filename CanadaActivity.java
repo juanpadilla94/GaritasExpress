@@ -39,12 +39,12 @@ public class CanadaActivity extends AppCompatActivity {
             // TEXT
             // yes crossing name
             if(portList.get(i).getCrossingName().trim() != "N/A") {
-                text = portList.get(i).getPortName() + " "
+                text = portList.get(i).getPortName().trim() + " "
                         + "(" + portList.get(i).getCrossingName().trim() + ")";
             }
             // no crossing name
             else {
-                text = portList.get(i).getPortName();
+                text = portList.get(i).getPortName().trim();
             }
             // hours
             hours = portList.get(i).getHours();
