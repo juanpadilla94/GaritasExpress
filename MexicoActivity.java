@@ -1,4 +1,4 @@
-package com.example.juanm.garitasexpress;
+package com.garitasexpress.app;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+
 import java.util.ArrayList;
 
 // GARITAS EXPRESS - by Juan Padilla 8/2/2017
@@ -13,7 +14,7 @@ public class MexicoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        // model with datas
+        // model with data
         Model m = new Model(getIntent().getStringExtra("country"));
         m.generateData();
         ArrayList<Port> portList = m.getPortsList();

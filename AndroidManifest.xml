@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.juanm.garitasexpress">
+    package="com.garitasexpress.app">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -22,7 +22,6 @@
         <activity android:name=".CanadaActivity" />
         <activity android:name=".MexicoActivity" />
         <activity android:name=".PortActivity" />
-        <activity android:name=".Disclosure" />
         <activity android:name=".DisclosureActivity"></activity>
     </application>
 

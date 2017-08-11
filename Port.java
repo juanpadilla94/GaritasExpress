@@ -1,4 +1,4 @@
-package com.example.juanm.garitasexpress;
+package com.garitasexpress.app;
 
 /**
  * Created by JuanM on 7/28/2017.

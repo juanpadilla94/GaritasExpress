@@ -1,4 +1,4 @@
-package com.example.juanm.garitasexpress;
+package com.garitasexpress.app;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +15,7 @@ public class CanadaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // model with data
+        System.out.print("");
         Model m = new Model(getIntent().getStringExtra("country"));
         m.generateData();
         ArrayList<Port> portList = m.getPortsList();

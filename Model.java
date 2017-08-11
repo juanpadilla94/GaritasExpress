@@ -1,6 +1,7 @@
-package com.example.juanm.garitasexpress;
+package com.garitasexpress.app;
 
 import android.os.AsyncTask;
+
 import org.jsoup.Jsoup;
 import java.io.IOException;
 import java.util.ArrayList;
